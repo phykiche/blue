@@ -88,7 +88,7 @@ client.once("guildCreate", (guild) => {
     const embed = new MessageEmbed()
     .setTitle("Merci d'avoir ajouté BLUΞS à votre serveur !")
     .setColor("#75b1ff")
-    .setDescription("prefix actuel est ```b.``` vous pouvez aussi mentionner le bot pour executer des commandes, exemple : \n```@BLUΞS help```\nN'oubliez pas d'executer la commande b.setup qui activera les logs, cela vous permettera d'être au courant de plusieur chose commme l'arriver ou le depart de membre sur le serveur, Merci d'utilisé BLUΞS !**")
+    .setDescription("**prefix actuel est ```b.``` vous pouvez aussi mentionner le bot pour executer des commandes, exemple : \n```@BLUΞS help```\nN'oubliez pas d'executer la commande b.setup qui activera les logs, cela vous permettera d'être au courant de plusieur chose commme l'arriver ou le depart de membre sur le serveur, Merci d'utilisé BLUΞS !**")
     .setImage("https://discordapp.com/assets/c7d26cb2902f21277d32ad03e7a21139.gif")
     .setFooter("BLUΞS", client.user.avatarURL());
     guild.owner.send(embed);
