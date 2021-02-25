@@ -1,0 +1,17 @@
+{
+  "name": "blues",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "phyki",
+  "license": "ISC",
+  "dependencies": {
+    "discord-akairo": "^8.1.0",
+    "discord.js": "^12.5.1",
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
+  }
+}
