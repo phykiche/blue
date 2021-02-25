@@ -93,6 +93,6 @@ client.once("guildCreate", (guild) => {
 })
 
 const PORT = process.env.PORT || 5001;
-client.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
+client.on(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
 client.login(process.env.TOKEN);
