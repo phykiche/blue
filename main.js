@@ -38,7 +38,6 @@ class blues extends AkairoClient {
 
 
 const client = new blues();
-const config = require('./config.json')
 
 const moment = require("moment");
 require('moment/locale/fr.js');
