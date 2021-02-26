@@ -29,7 +29,7 @@ class stCommand extends Command {
         text
     }) {
         const testembed = new MessageEmbed()
-            .setColor(`#de8500`)
+            .setColor("#75b1ff")
             .setAuthor(message.author.username + " vous souhaites bienvenu(e) ! ", message.author.displayAvatarURL({ dynamic: true }))
             .setTimestamp();
             message.delete()
