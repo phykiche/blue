@@ -12,7 +12,7 @@ class ReadyEvent extends Listener {
 
     async exec() {
         const statues = [
-            ` BLUΞS • b.help`,
+            ` gohra • .help`,
             ` Sur ${this.client.guilds.cache.size} serveurs ! `,
             " https://www.lidl.fr/ "
         ]
