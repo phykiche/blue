@@ -21,7 +21,7 @@ class blues extends AkairoClient {
         });
 
         this.Commands = new CommandHandler(this, {
-            prefix: "b.",
+            prefix: ".",
             directory: join(__dirname, "./", "commands"),
             aliasReplacement: /-/g,
             allowMention: true,
@@ -43,7 +43,7 @@ const moment = require("moment");
 require('moment/locale/fr.js');
 
 client.on("guildMemberAdd", async member => {
-    let logs2 = member.guild.channels.cache.find(c => c.name == "blue-logs")
+    let logs2 = member.guild.channels.cache.find(c => c.name == "Gohra")
     let embed2 = new MessageEmbed()
         .setThumbnail(member.guild.iconURL())
         .setAuthor(`${member.displayName}`, member.user.displayAvatarURL({
@@ -55,13 +55,13 @@ client.on("guildMemberAdd", async member => {
         .setFooter(`Compte crée le : ${moment(member.user.createdTimestamp).format('LLLL')} soit ${moment(member.user.createdTimestamp).startOf('Do').fromNow()}`, member.user.displayAvatarURL({
             dynamic: true
         }))
-        .setColor("#75b1ff")
+        .setColor("#RED")
         .setTimestamp()
     logs2.send(embed2)
 })
 
 client.on("guildMemberRemove", async member => {
-    let logs3 = member.guild.channels.cache.find(c => c.name == "blue-logs")
+    let logs3 = member.guild.channels.cache.find(c => c.name == "Gohra")
 
     let embed3 = new MessageEmbed()
     .setThumbnail(member.guild.iconURL())
@@ -72,7 +72,7 @@ client.on("guildMemberRemove", async member => {
     .setTitle(`${member.displayName} vient de nous quitter ;( !\npas cool... \nsurment un idiot.. `, member.user.displayAvatarURL({
         dynamic: true
     }))
-    .setFooter(`BLUΞS`, member.user.displayAvatarURL({
+    .setFooter(`Gohra`, member.user.displayAvatarURL({
         dynamic: true
     }))
     .setTimestamp()
@@ -86,13 +86,14 @@ client.on("guildMemberAdd", async member => {
 
 client.once("guildCreate", (guild) => {
     const embed = new MessageEmbed()
-    .setTitle("Merci d'avoir ajouté BLUΞS à votre serveur !")
-    .setColor("#75b1ff")
-    .setDescription("**prefix actuel est ```b.``` vous pouvez aussi mentionner le bot pour executer des commandes, exemple : \n```@BLUΞS help```\nN'oubliez pas d'executer la commande b.setup qui activera les logs, cela vous permettera d'être au courant de plusieur chose commme l'arriver ou le depart de membre sur le serveur, Merci d'utilisé BLUΞS !**")
+    .setTitle("Merci d'avoir ajouté Gohra à votre serveur !")
+    .setColor("#RED")
+    .setDescription("**prefix actuel est ```.``` vous pouvez aussi mentionner le bot pour executer des commandes, exemple : \n```@BLUΞS help```\nN'oubliez pas d'executer la commande b.setup qui activera les logs, cela vous permettera d'être au courant de plusieur chose commme l'arriver ou le depart de membre sur le serveur, Merci d'utilisé BLUΞS !**")
     .setImage("https://discordapp.com/assets/c7d26cb2902f21277d32ad03e7a21139.gif")
-    .setFooter("BLUΞS", client.user.avatarURL());
+    .setFooter("Gohra", client.user.avatarURL());
     guild.owner.send(embed);
 })
+
 
 const PORT = process.env.PORT || 5001;
 client.on(PORT, () => console.log(`Server is listening on port ${PORT}...`));
