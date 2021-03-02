@@ -43,7 +43,7 @@ const moment = require("moment");
 require('moment/locale/fr.js');
 
 client.on("guildMemberAdd", async member => {
-    let logs2 = member.guild.channels.cache.find(c => c.name == "Gohra")
+    let logs2 = member.guild.channels.cache.find(c => c.name == "gohra")
     let embed2 = new MessageEmbed()
         .setThumbnail(member.guild.iconURL())
         .setAuthor(`${member.displayName}`, member.user.displayAvatarURL({
@@ -61,7 +61,7 @@ client.on("guildMemberAdd", async member => {
 })
 
 client.on("guildMemberRemove", async member => {
-    let logs3 = member.guild.channels.cache.find(c => c.name == "Gohra")
+    let logs3 = member.guild.channels.cache.find(c => c.name == "gohra")
 
     let embed3 = new MessageEmbed()
     .setThumbnail(member.guild.iconURL())
