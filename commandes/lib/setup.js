@@ -16,12 +16,12 @@ class setupCommand extends Command {
   }
   async exec(message) {
     let channel = message.guild.channels.cache.find(
-      (c) => c.name === "blue-logs"
+      (c) => c.name === "gohra"
     );
 
     if (channel) {
       let embedd = new MessageEmbed()
-        .setColor("#75b1ff")
+        .setColor("#RED")
         .setTitle("ℹ️ le bot est déja initialiser sur ce serveur ! ")
         .setFooter(`${this.client.user.username}`, this.client.user.displayAvatarURL({ dynamic: true}))
         .setTimestamp();
@@ -29,13 +29,13 @@ class setupCommand extends Command {
       return message.channel.send(embedd);
     } else {
       let embed = new MessageEmbed()
-        .setColor("#75b1ff")
+        .setColor("#RED")
         .setTitle("ℹ️ bot initialiser avec succés ! ")
         .setFooter(`${this.client.user.username}`, this.client.user.displayAvatarURL({ dynamic: true}))
         .setTimestamp();
 
       message.guild.channels
-        .create("blue-logs", {
+        .create("gohra", {
           type: "text",
           permissionOverwrites: [
             {
