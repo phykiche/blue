@@ -86,7 +86,7 @@ client.on("guildMemberAdd", async member => {
     .setThumbnail(member.user.displayAvatarURL({
             dynamic: true
         }))
-    .setDescription(`Bienvenu(e) ${member} !`, member.user.displayAvatarURL({
+    .setDescription(`**Bienvenu(e) ${member} !**`, member.user.displayAvatarURL({
             dynamic: true
         }))
     logs222.send(embeddddd)
