@@ -81,7 +81,9 @@ client.on("guildMemberRemove", async member => {
 
 client.on("guildMemberAdd", async member => {
     let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・general")
-    logs222.send(`** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#816082169301696533>**, et passe un bon moment.**`)
+    const embeddddd = New.MessageEmbed() 
+    .setAuthor(`Bienvenu(e) ${member} !` member.displayAvatarURL({ dynamic: true }))
+    logs222.send(embeddddd)
 })
 
 client.once("guildCreate", (guild) => {
