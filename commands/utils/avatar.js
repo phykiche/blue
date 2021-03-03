@@ -42,8 +42,8 @@ class helpCommand extends Command {
                     dynamic: true,
                     size: 1024
                 }))
-                .setColor("#75b1ff")
-                .setFooter(`BLUΞS`, message.author.displayAvatarURL({
+                .setColor("RED")
+                .setFooter(`Gohra`, message.author.displayAvatarURL({
                     dynamic: true,
                     size: 1024
                 }))
@@ -63,8 +63,8 @@ class helpCommand extends Command {
                 dynamic: true,
                 size: 1024
             }))
-            .setColor("#75b1ff")
-            .setFooter(`BLUΞS`, member.displayAvatarURL({
+            .setColor("RED")
+            .setFooter(`Gohra`, member.displayAvatarURL({
                 dynamic: true,
                 size: 1024
             }))
