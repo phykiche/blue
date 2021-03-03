@@ -80,7 +80,7 @@ client.on("guildMemberRemove", async member => {
 })
 
 client.on("guildMemberAdd", async member => {
-    let logs222 = member.guild.channels.cache.find(c => c.name == "816084951765614603")
+    let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・général")
     let embeddddd = new MessageEmbed()
     .setColor("RED")
     .setAuthor(`Bienvenu(e) ${member} !`, member.user.displayAvatarURL({
