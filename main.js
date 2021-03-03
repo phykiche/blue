@@ -55,7 +55,7 @@ client.on("guildMemberAdd", async member => {
         .setFooter(`Compte crée le : ${moment(member.user.createdTimestamp).format('LLLL')} soit ${moment(member.user.createdTimestamp).startOf('Do').fromNow()}`, member.user.displayAvatarURL({
             dynamic: true
         }))
-        .setColor("#RED")
+        .setColor("RED")
         .setTimestamp()
     logs2.send(embed2)
 })
@@ -80,14 +80,14 @@ client.on("guildMemberRemove", async member => {
 })
 
 client.on("guildMemberAdd", async member => {
-    let logs222 = member.guild.channels.cache.find(c => c.name == "🌎・général")
+    let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・general")
     logs222.send(`<a:LeT_welcomeG1:813389092145725452><a:LeT_welcomeG2:813389022985715723>** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#811356531245056040>**, et passe un bon moment.**`)
 })
 
 client.once("guildCreate", (guild) => {
     const embed = new MessageEmbed()
     .setTitle("Merci d'avoir ajouté Gohra à votre serveur !")
-    .setColor("#RED")
+    .setColor("RED")
     .setDescription("**prefix actuel est ```.``` vous pouvez aussi mentionner le bot pour executer des commandes, exemple : \n```@BLUΞS help```\nN'oubliez pas d'executer la commande b.setup qui activera les logs, cela vous permettera d'être au courant de plusieur chose commme l'arriver ou le depart de membre sur le serveur, Merci d'utilisé BLUΞS !**")
     .setImage("https://discordapp.com/assets/c7d26cb2902f21277d32ad03e7a21139.gif")
     .setFooter("Gohra", client.user.avatarURL());
