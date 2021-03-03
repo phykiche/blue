@@ -83,7 +83,9 @@ client.on("guildMemberAdd", async member => {
     let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・general")
     const embeddddd = new MessageEmbed()
     .setColor("RED")
-    .setAuthor(`Bienvenu(e) ${member} !`, member.displayAvatarURL({ dynamic: true }))
+    .setAuthor(`Bienvenu(e) ${member} !`, member.user.displayAvatarURL({
+            dynamic: true
+        }))
     logs222.send(embeddddd)
 })
 
