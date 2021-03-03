@@ -81,7 +81,7 @@ client.on("guildMemberRemove", async member => {
 
 client.on("guildMemberAdd", async member => {
     let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・general")
-    logs222.send(`<a:LeT_welcomeG1:813389092145725452><a:LeT_welcomeG2:813389022985715723>** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#811356531245056040>**, et passe un bon moment.**`)
+    logs222.send(`** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#811356531245056040>**, et passe un bon moment.**`)
 })
 
 client.once("guildCreate", (guild) => {
