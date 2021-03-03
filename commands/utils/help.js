@@ -30,8 +30,8 @@ class helpCommand extends Command {
         let embed = new MessageEmbed()
         .setTitle(`Commandes de ${this.client.user.username}`, message.author.displayAvatarURL({ dynamic: true }))
         .setDescription(`[inviter le bot](https://discord.com/api/oauth2/authorize?client_id=811667347718799360&permissions=8&scope=bot) • [bio](https://discord.bio/p/phyki)\n __**Admin :**__\nsetup : creer un salon logs.  \n __**Modération :**__\nmprive : Envoie un message privé à l'utilisateur(e) mentionné(e). \n __**Utiles :**__\n clear : supprime les messages (entre 1 à 100).\nsay : Communique via le bot discord.\navatar : affiche de la photo de profil de l'utilisateur mentionné. \n __**Fun :**__\n rien`)
-        .setColor("#75b1ff")
-        .setFooter(`prefix de ${this.client.user.username} : b.`, message.author.displayAvatarURL({ dynamic: true }))
+        .setColor("RED")
+        .setFooter(`prefix : .`, message.author.displayAvatarURL({ dynamic: true }))
         .setTimestamp();
       message.channel.send(embed)
     }
