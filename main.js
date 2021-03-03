@@ -81,7 +81,7 @@ client.on("guildMemberRemove", async member => {
 
 client.on("guildMemberAdd", async member => {
     let logs222 = member.guild.channels.cache.find(c => c.name == "🌍・general")
-    logs222.send(`** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#811356531245056040>**, et passe un bon moment.**`)
+    logs222.send(`** Bienvenu(e) ${member} !  N'hésite pas à aller au salon **<#816082169301696533>**, et passe un bon moment.**`)
 })
 
 client.once("guildCreate", (guild) => {
