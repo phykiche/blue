@@ -49,7 +49,7 @@ client.on("guildMemberAdd", async member => {
         .setAuthor(`${member.displayName}`, member.user.displayAvatarURL({
             dynamic: true
         }))
-        .setTitle(`${member.displayName} vient de rejoindre le serveur !\nGénial !`, member.user.displayAvatarURL({
+        .setTitle(`${member.displayName} vient de rejoindre le serveur !\Nous sommes désormais ${member.guild.memberCount} !`, member.user.displayAvatarURL({
             dynamic: true
         }))
         .setFooter(`Compte crée le : ${moment(member.user.createdTimestamp).format('LLLL')} soit ${moment(member.user.createdTimestamp).startOf('Do').fromNow()}`, member.user.displayAvatarURL({
@@ -69,7 +69,7 @@ client.on("guildMemberRemove", async member => {
     .setAuthor(`${member.displayName}`, member.user.displayAvatarURL({
         dynamic: true
     }))
-    .setTitle(`${member.displayName} vient de nous quitter ;( !\npas cool... \nsurment un idiot.. `, member.user.displayAvatarURL({
+    .setTitle(`${member.displayName} vient de nous quitter ;( !\nNous sommes désormais ${member.guild.memberCount} \n[Invitez](https://discord.gg/HHdzSVqvCY) donc des gens !  `, member.user.displayAvatarURL({
         dynamic: true
     }))
     .setFooter(`Gohra`, member.user.displayAvatarURL({
