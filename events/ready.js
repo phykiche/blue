@@ -51,6 +51,10 @@ class ReadyEvent extends Listener {
         console.log(`Je suis actuellement sur ${this.client.guilds.cache.size} serveur(s).`)
 
         console.log(`Je suis ${this.client.user.tag} `)
+        
+        
+const PORT = process.env.PORT || 5001;
+client.on(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
     };
 
