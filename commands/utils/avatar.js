@@ -55,7 +55,7 @@ class helpCommand extends Command {
         if (member) {
         let embed = new MessageEmbed()
             .setTitle(`Photo de profil de ${member.username}`)
-            .setDescription(`l'Image ne s'affiche pas ? [Clique ici.](${message.author.displayAvatarURL({
+            .setDescription(`l'Image ne s'affiche pas ? [Clique ici.](${member.displayAvatarURL({
                 dynamic: true,
                 size: 1024
             })})`)
