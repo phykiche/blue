@@ -101,6 +101,17 @@ client.once("guildCreate", (guild) => {
 })
 
 
+client.on("guildMemberAdd", async member => {
+    let logs222 = member.guild.channels.cache.find(c => c.name == "💬・général")
+    let embedddddddddd = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`**Bienvenu(e) ${member.displayName} !**`, member.user.displayAvatarURL({
+            dynamic: true
+        }))
+    logs222.send(embedddddddddd)
+})
+
+
 const PORT = process.env.PORT || 5001;
 client.on(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 
